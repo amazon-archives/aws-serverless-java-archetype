@@ -1,0 +1,29 @@
+<archetype-descriptor name="aws-serverless-java-archetype"
+                      xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd">
+    <requiredProperties>
+        <requiredProperty key="className"/>
+        <requiredProperty key="handlerType">
+            <defaultValue>pojo</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="logger">
+            <defaultValue>lambda</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+    <fileSets>
+        <fileSet filtered="true" packaged="true">
+            <directory>src/main/java</directory>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory>src/main/resources</directory>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory/>
+            <includes>
+                <include>template.yaml</include>
+                <include>event.json</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
