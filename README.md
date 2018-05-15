@@ -33,7 +33,7 @@ mvn archetype:generate \
 The generated `pom.xml` is configured to use AWS SAM Local to verify, and AWS CLI to build and deploy the application. In order to do them, you need to install tools below:
 
 - [AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
-- (Optional) [AWS SAM Local](https://github.com/awslabs/aws-sam-local#installation)
+- (Optional) [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli#installation)
     - Also, you need to install Docker as well. Follow the instruction above.
 
 First, but optionally, you can try to invoke your function locally by the following command:
