@@ -30,7 +30,7 @@ mvn archetype:generate \
 ```
 
 ### Verify, Build and Deploy your first application
-The generated `pom.xml` is configured to use AWS SAM Local to verify, and AWS CLI to build and deploy the application. In order to do them, you need to install tools below:
+The generated `pom.xml` is configured to use AWS SAM CLI to verify, and AWS CLI to build and deploy the application. In order to do them, you need to install tools below:
 
 - [AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 - (Optional) [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli#installation)
